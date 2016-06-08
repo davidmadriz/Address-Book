@@ -18,7 +18,4 @@
 		traduction: 'No aplica',
 		notes: 'Ejemplo: Elimine este ejemplo e inicie su base de datos.'}])
 
-	User.create([
-		{username: 'gaby', role: 'Gaby Ampie', hashed_password: '54467'},
-		{username: 'admin', role: 'Administrador', hashed_password: 'admin1020'},
-		{username: 'sergio', role: 'Sergio Herrera', hashed_password: '65578'}])	
+	
