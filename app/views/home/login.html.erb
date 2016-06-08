@@ -1,0 +1,17 @@
+<div style= "margin-left: 25px;">
+<%= form_tag(controller: "home", action: "login", method: "post") %>
+<h1 ><%= tr('login') %></h1>
+<div>
+  <%= label_tag(:username, tr("username")) %>:<br>
+  <%= text_field_tag(:username) %> <br>
+  </div>
+  <br>
+  <div>
+  <%= label_tag(:password, tr("password")) %>:<br>
+  <%= password_field_tag (:password) %> <br>
+  </div>
+  <br><br>
+  <div>
+  <%= submit_tag tr("login") ,class:"btn"%><br><br>
+  </div>
+</div>

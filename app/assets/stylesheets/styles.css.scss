@@ -1,0 +1,65 @@
+html, body{
+	margin: 0px;
+}
+.header{
+	background-color: #F2904A;
+}
+.center{
+	text-align: center;
+}
+.title{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	font-size: 30px;
+}
+.footer{
+	font-style: italic;
+	font-size: 15px;
+	color: gray;
+	background-color: #DBE9FF;
+	padding-bottom: 10px;
+	padding-top: 10px;	
+}
+.login-page {
+  width: 90%;
+  padding: 2% 0 0;
+  margin: auto;
+}
+.btn{
+	background-color: #2DFA3F;
+	padding: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+	border-radius: 4px;
+	border: none;
+	color: black;
+	text-decoration: none;
+}
+.btn:hover{
+	background-color: #32F202;
+}
+.txt{
+	width: 100%;
+	
+}
+.size{
+	height: 150px;
+	text-align: justify;
+}
+
+a{
+	color: #7794FF;
+	text-decoration: none;
+}
+a:hover{
+	color: green;
+	text-decoration: underline;
+}
+.info{
+	font-style: italic;
+	
+}

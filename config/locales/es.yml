@@ -1,0 +1,64 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+
+es:
+  agency: "Agencia Lucero Tours"
+  please_login: "Por favor iniciar sesion en la parte inferior de la pantalla."
+  plaese_logout: "Recordar cerrar sesion en la parte inferior de la pantalla, esto para protejer la privacidad de los datos guardados"
+  login: "Iniciar Sesion"
+  logout: "Cerrar sesion"
+  username: "Usuario:"
+  password: "Contraseña:"
+  new_contact: "Nuevo contacto"
+  contacts_list: "Lista de contactos"
+  welcome: "Bienvenid@"
+  home: "Inicio"
+  first_name: "1°_Nombre"
+  second_name: "2°_Nombre"
+  last_name: "Apellidos"
+  ocupation: "Ocupación"
+  address: "Dirección"
+  e_mail: "E-mail"
+  phone_1: "Teléfono_1"
+  phone_2: "Teléfono_2"
+  traduction: "Traducción"
+  notes: "Notas_Importantes"
+  actions: "Acciónes"
+  show: "Mostrar"
+  edit: "Editar"
+  back: "Atras"
+  delete: "Eliminar"
+  helpers:
+    submit:
+      create: "Crear"
+      update: "Actualizar"
+
+  any_blanck: "Por favor complete todos los campos."
+  if_is_blanck: "Si usted no posee datos favor escribir 'No aplica' "
+  update_contact: "Actualizar Contacto"
+  sure?: "¿Desea eliminar permanentemente este registro?"
+  "when saving data": " al guardar los datos."
+  errors: "errores"
+  "Contact was successfully created": "Contacto creado exitoxamente."
+  "Contact was successfully updated": "Contacto actualizado exitoxamente."
+  "Contact was successfully destroyed": "Contacto destruido correctamente."
+  thanks_logout: "Gracias por usar esta aplicación..."

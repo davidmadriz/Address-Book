@@ -1,0 +1,21 @@
+<div class="page-size">
+
+<div style="padding-top: 2%; padding-bottom: 2%;"class="center">
+
+<% if session[:username].present? %>
+<h1><a href="/contacts"><%=  tr('contacts_list')%></a></h1>
+
+<% end %>
+
+<img src="/icon.png" style= "width: 20em;"" >
+<% if session[:username].present? %>
+<h3><%= tr("welcome")%>  <%= (@user.role) %></h3>
+<% end %>
+
+
+<% if session[:username].present? %>
+	<p class="info"><%= tr('plaese_logout')%></p>
+<%else%>
+	<p class="info"><%= tr('please_login')%></p>
+<% end -%>
+</div>

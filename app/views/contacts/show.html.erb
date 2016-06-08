@@ -1,0 +1,60 @@
+
+<%= link_to tr('edit'), edit_contact_path(@contact) %> //
+<%= link_to tr('back'), contacts_path %>
+<div style="width: 90%; margin: auto;">
+<p id="notice"><%= notice %></p>
+
+<table>
+
+<p>
+  <strong><%= tr("first_name")%></strong><br>
+  <%= @contact.first_name %>
+</p>
+
+<p>
+  <strong><%= tr("second_name")%></strong><br>
+  <%= @contact.second_name %>
+</p>
+
+<p>
+  <strong><%= tr("last_name")%></strong><br>
+  <%= @contact.last_name %>
+</p>
+
+
+<p>
+  <strong><%= tr("ocupation")%></strong><br>
+  <%= @contact.ocupation %>
+</p>
+
+<p>
+  <strong><%= tr("address")%></strong><br>
+  <%= @contact.address %>
+</p>
+
+<p>
+  <strong><%= tr("phone_1")%></strong><br>
+  <%= @contact.phone_1 %>
+</p>
+
+<p>
+  <strong><%= tr("phone_2")%></strong><br>
+  <%= @contact.phone_2 %>
+</p>
+
+<p>
+  <strong><%= tr("e_mail")%></strong><br>
+  <%= @contact.e_mail %>
+</p>
+
+<p>
+  <strong><%= tr("traduction")%></strong><br>
+  <%= @contact.traduction %>
+</p>
+
+<p>
+  <strong><%= tr("notes")%></strong><br>
+  <%= @contact.notes %>
+</p>
+</table>
+</div>

@@ -1,0 +1,49 @@
+<%= link_to tr('new_contact'), new_contact_path %> //
+<%= link_to tr("home"), {controller: :home, action: :index}%>
+
+<div style="width: 97%; margin: auto;">
+
+<p id="notice"><%= notice %></p>
+
+<h1>Lista de Contactos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= tr("first_name")%></th>
+      <th><%= tr("second_name")%></th>
+      <th><%= tr("last_name")%></th>
+      <th><%= tr("ocupation")%></th>
+      <th><%= tr("address")%></th>
+      <th><%= tr("phone_1")%></th>
+      <th><%= tr("phone_2")%></th>
+      <th><%= tr("e_mail")%></th>
+      <th><%= tr("traduction")%></th>
+      <th><%= tr("notes")%></th>
+  
+      <th class="center" colspan="2"><%=  tr("actions")%></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.first_name %></td>
+        <td><%= contact.second_name %></td>
+        <td><%= contact.last_name %></td>
+        <td><%= contact.ocupation %></td>
+        <td><%= contact.address %></td>
+        <td><%= contact.phone_1 %></td>
+        <td><%= contact.phone_2 %></td>
+        <td><%= contact.e_mail %></td>
+        <td><%= contact.traduction %></td>
+        <td><%= contact.notes %></td>
+        <td><%= link_to tr('show'), contact %></td>
+        <td><%= link_to tr('edit'), edit_contact_path(contact) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agenda Telefónica Lucero Tours</title>
+  <link rel="icon" type="image/png" href="/icon.ico" />
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+ <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+	<header class="header">
+		<h1 class="title" style="padding-left: 20px;"><%= tr("agency")%></h1>
+	</header>
+<body>
+
+<%= yield %>
+
+	<footer class="center footer">
+	<% if session[:username].present? %>
+		<div style="margin-top: 5px;"><%= link_to tr('logout'), {controller: :home, action: :logout}%></a></div>	
+	<% else %>
+		<div style="margin-top: 5px;"><%= link_to tr('login'), {controller: :home, action: :login}%></a></div>	
+	<% end %>
+		<p>
+		Agencia Lucero Tours <br>
+		Costa Rica 2016&copy; &middot; Software confidencial
+		</p>
+	</footer>
+</body>
+</html>

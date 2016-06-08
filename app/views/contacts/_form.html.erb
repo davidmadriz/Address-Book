@@ -1,0 +1,96 @@
+<div style= "width: 70%; margin: auto;">
+
+<%= form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact.errors.count, tr("errors")) %> <%= tr("when saving data")%></h2>
+
+     
+    </div>
+  <% end %>
+  <p>
+  *  <%= tr("any_blanck")%><br>
+  *  <%= tr("if_is_blanck")%>
+  </p>
+    
+  <table style= "border: 1px solid;">
+    <tr style= "background-color: white;">
+      <td style= "border: none;">
+        <div class="field">
+    <%= f.label :"first_name" , tr("first_name")%><br>
+    <%= f.text_field :first_name , class: "txt" %>
+  </div>
+      </td>
+      <td style= "border: none;">
+        <div class="field">
+    <%= f.label :"second_name", tr("second_name") %><br>
+    <%= f.text_field :second_name , class: "txt" %>
+  </div>
+      </td>
+      <td colspan="2" style= "border: none;">
+        <div class="field">
+    <%= f.label :"last_name", tr("last_name") %><br>
+    <%= f.text_field :last_name, class: "txt" %>
+  </div>
+      </td>
+
+    </tr>
+    <tr style= "background-color: white;">
+      <td style= "border: none;">
+         <div class="field">
+    <%= f.label :"ocupation", tr("ocupation") %><br>
+    <%= f.text_field :ocupation , class: "txt" %>
+  </div>
+      </td>
+      <td style= "border: none;">
+        <div class="field">
+    <%= f.label :"address", tr("address") %><br>
+    <%= f.text_field :address , class: "txt" %>
+  </div>
+      </td>
+      <td colspan="2" style= "border: none;">
+        
+  <div class="field">
+    <%= f.label :"traduction", tr("traduction") %><br>
+    <%= f.text_field :traduction , class: "txt" %>
+  </div>
+      </td>
+    </tr>
+    <tr style= "background-color: white;">
+      <td style= "border: none;">
+          
+  <div class="field">
+    <%= f.label :"phone_1" , tr("phone_1") %><br>
+    <%= f.text_field :phone_1, class: "txt"  %>
+  </div>
+      </td>
+      <td style= "border: none;">
+        <div class="field">
+    <%= f.label :"phone_2", tr("phone_2") %><br>
+    <%= f.text_field :phone_2 , class: "txt" %>
+  </div>
+      </td>
+      <td colspan="2" style= "border: none;">
+         <div class="field">
+    <%= f.label :"e_mail", tr("e_mail") %><br>
+    <%= f.text_field :e_mail , class: "txt" %>
+  </div>
+      </td>
+    </tr>
+
+    <td colspan="4" style= "border: none; background-color: white; ">
+      <div class="field">
+    <%= f.label :"notes", tr("notes") %><br>
+    <%= f.text_area :notes , class: "txt size" %>
+  </div>
+    </td>
+    
+  </table>
+
+  <br>
+  <div class="center">
+    <%= f.submit class:"btn center" %>
+  </div>
+  <br>
+<% end %>
+</div> 

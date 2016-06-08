@@ -1,0 +1,7 @@
+<%= link_to tr("back"), contacts_path %> //
+<%= link_to tr("contacts_list"), @contact %> //
+<%= link_to tr("delete"), @contact, method: :delete, data: { confirm: tr("sure?") } %>
+
+<h1 class="center"><%= tr("update_contact")%></h1>
+
+<%= render 'form' %>
