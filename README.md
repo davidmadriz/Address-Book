@@ -1,12 +1,12 @@
-Lucero Tours Agency
-Paso Canoas
-Costa Rica
-2016
-
-Genaral description
-Free software
-English and Spanish lenguaje hovewer only show in spanish
-	(Change that creating new link_to locale or change in application_controller in the line 17 "es" change for "en")
+* Lucero Tours Agency
+* Paso Canoas
+* Costa Rica
+* 2016
+*
+* Genaral description
+* Free software
+* English and Spanish lenguaje hovewer only show in spanish
+*	(Change that creating new link_to locale or change in application_controller in the line 17 "es" change for "en")
 User control.
 
 Data Base
